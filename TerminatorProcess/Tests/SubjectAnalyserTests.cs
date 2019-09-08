@@ -35,15 +35,5 @@ namespace TerminatorProcess.Tests
 
             result.Equals(outcome);
         }
-
-
-        [Test]
-        public void TerminatorShould_DetermineNot_ToInvestigateFurt()
-        {
-            var subject = new Subject { SubjectName = "T1000" };
-            var result = _sut.InvestigateFurther(subject);
-
-            result.Should().BeFalse();
-        }
     }
 }
